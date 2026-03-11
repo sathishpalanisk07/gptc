@@ -857,7 +857,7 @@ const Mainpage = () => {
                     <div className='col-lg-8'>
                       <h1>{banner.title}</h1>
                       {/* <p>{banner.description}</p> */}
-                      {/* <button className='mainbtn'>Learn More</button> */}
+                      <button className='mainbtn'>Learn More</button>
                     </div>
                   </div>
                 </div>
@@ -927,7 +927,7 @@ const Mainpage = () => {
 
 
 
-      <section className='companyPhotoSec'>
+      {/* <section className='companyPhotoSec'>
         <Slider {...companyPhoto}>
 
 
@@ -952,9 +952,9 @@ const Mainpage = () => {
             <img src="/assets/img/company-photo/sl6.jpg" alt="companyphoto" />
           </div>
         </Slider>
-      </section>
+      </section> */}
 
-      <LeaderShipTeam />
+      {/* <LeaderShipTeam /> */}
 
 
       <section className='weServeGlobally_sec' ref={sectionRef}>

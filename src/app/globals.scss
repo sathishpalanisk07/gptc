@@ -1,7 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+// @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 // @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 
 // @import url('https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap');
+// @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100..700;1,100..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 
 *,
 ::after,
@@ -24,7 +26,8 @@ a:hover {
 // } 
 
 :root {
-    --fontFamily: "Poppins", sans-serif;
+    --fontFamily: "Inter",sans-serif;
+    // --fontFamily: "Poppins", sans-serif;
     // --fontFamily: "Lexend", sans-serif;
     // --fontFamily: "Oswald", sans-serif;
     --white_clr: #FFF;
@@ -165,6 +168,10 @@ body {
 
 .borderRadius10 {
     border-radius: 10px;
+}
+
+.position_absolute {
+    position: absolute;
 }
 
 .mbZero {
@@ -463,12 +470,12 @@ body {
 a.mainbtn {
     font-size: 14px;
     color: #fff;
-    padding: 14px 20px;
+    padding: 12px 24px;
     transition: all .5s ease-in-out;
-    text-transform: uppercase;
+    text-transform: capitalize;
     position: relative;
-    border-radius: 50px 50px 50px 0;
-    font-weight: 600;
+    border-radius: 24px;
+    font-weight: 500;
     // letter-spacing: 1px;
     cursor: pointer;
     text-align: center;
@@ -611,10 +618,15 @@ ul.socialMediaLink li img {
 // }
 header {
     padding: 0px;
-    background: var(--white_clr);
-    -webkit-backdrop-filter: blur(.6rem);
-    backdrop-filter: blur(.6rem);
-    background: hsla(0, 0%, 100%, .5);
+    // background: var(--white_clr);
+    // -webkit-backdrop-filter: blur(.6rem);
+    // backdrop-filter: blur(.6rem);
+    // background: hsla(0, 0%, 100%, .5);
+    background: transparent;
+    top: 50px;
+    left: 0;
+    right: 0;
+    z-index: 50;
 
 }
 
@@ -646,7 +658,7 @@ header ul li a {
     font-size: 16px;
     font-weight: 500;
     line-height: 1.5;
-    color: var(--black_clr);
+    color: var(--white_clr);
     background: transparent;
     border: 1px solid transparent;
     text-decoration: none;
@@ -727,7 +739,7 @@ header ul li .show.dropdown .dropdown-toggle:after {
 header ul li .dropdown-toggle {
     background: transparent;
     border: 1px solid transparent;
-    color: var(--black_clr);
+    color: var(--white_clr);
     cursor: pointer;
     padding: 0;
     font-size: 16px;
@@ -740,7 +752,7 @@ header ul li .dropdown-toggle:hover,
 header ul li .dropdown-toggle:active {
     background: transparent !important;
     border: 1px solid transparent !important;
-    color: #000;
+    color: var(--white_clr);
 }
 
 header ul li .dropdown-item:active {
@@ -755,7 +767,7 @@ header ul li .dropdown-item:active {
 
 header ul li a:hover,
 header ul li a.active {
-    color: #EE3138;
+    color:var(--white_clr) !important;
 }
 
 .navbarCollapse {
@@ -797,36 +809,57 @@ header ul li a.active {
 }
 
 .herobnr .slick-next {
-    right: 50px;
-    width: 55px;
-    height: 55px;
+    right: 40px;
+    width: 34px;
+    height: 34px;
+    border-radius: 50%;
+    display: flex !important;
+    align-items: center;
+    background-color: var(--white_clr);
+    justify-content: center;
 }
 
 .herobnr .slick-prev:before {
     content: "";
     background: url("/assets/img/formkit_left.svg") no-repeat;
     // background-size: 34px;
-    width: 55px;
-    height: 55px;
+    width: 24px;
+    height: 24px;
     display: block;
+    background-size: cover;
+    background-position: center;
 }
 
 .herobnr .slick-next:before {
     content: "";
     background: url("/assets/img/formkit_right.svg") no-repeat;
     // background-size: 34px;
-    width: 55px;
-    height: 55px;
+    width: 24px;
+    height: 24px;
     display: block;
+    background-size: cover;
+    background-position: center;
 }
 
 .herobnr .slick-prev {
-    left: 50px;
+    left: 40px;
     z-index: 1;
-    width: 55px;
-    height: 55px;
+    width: 34px;
+    height: 34px;
+    border-radius: 50%;
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--white_clr);
 }
 
+
+.herobnr .slick-prev:hover,
+.herobnr .slick-prev:focus,
+.herobnr .slick-next:hover,
+.herobnr .slick-next:focus{
+    background-color: var(--white_clr) !important;
+}
 .herobnr .slick-dots {
     bottom: 30px;
 }
@@ -923,7 +956,7 @@ header ul li a.active {
     // color: #000;
     color: #fff;
     margin: 0px;
-    // margin-bottom: 12px;
+    margin-bottom: 24px;
 }
 
 .bnrContent p {
@@ -938,7 +971,11 @@ header ul li a.active {
 .defaultWidth img {
     width: 100%;
 }
-
+.innerpage_bnrContent{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
 
 .innerpage_bnrContent h1 {
     color: #000;
@@ -946,6 +983,7 @@ header ul li a.active {
     font-size: 44px;
     font-weight: bold;
     line-height: 1.5;
+    margin: 0;
 }
 
 ul.page_breadcrumb {
@@ -1381,7 +1419,7 @@ ul.page_breadcrumb li a {
 }
 
 .testmonials_sec {
-    padding: 40px 0px;
+    padding: 34px 0px;
     background: #f7f7f7;
 }
 
@@ -1751,7 +1789,8 @@ a[data-sub-html]:hover .galleryhover h5 {
     // background: #EBF2FA;
     width: 100%;
     padding: 50px 0px;
-    height: 620px;
+    // height: 620px;
+    height: 550px;
 }
 
 
@@ -2558,7 +2597,7 @@ ul.stscTab li button:hover {
 
 .leadershipteamItem {
     cursor: pointer;
-margin-bottom: 34px;
+    margin-bottom: 34px;
 }
 
 .leadershipteam-info p {
@@ -2808,7 +2847,7 @@ margin-bottom: 34px;
     border-radius: 20px;
     // text-align: center;
     margin-bottom: 100px;
-    height: 380px;
+    height: 360px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -2934,7 +2973,7 @@ margin-bottom: 34px;
 .addressItem h2 {
     font-size: 20px;
     line-height: 1.5;
-    font-weight: 500;
+    font-weight: 600;
     color: var(--black_clr);
     margin: 0px;
 }
