@@ -21,6 +21,7 @@ import 'lightgallery/scss/lg-zoom.scss';
 import lgThumbnail from 'lightgallery/plugins/thumbnail';
 import lgZoom from 'lightgallery/plugins/zoom';
 import Link from 'next/link';
+import InnerBanner from '../Components/InnerBanner';
 
 const page = () => {
     const onInit = () => {
@@ -31,176 +32,178 @@ const page = () => {
 
 
 
-    const crCopiesItems = [
-        {
-            type: "image",
-            src: "/assets/img/testmonials/c1.jpg",
-            thumb: "/assets/img/testmonials/c1.jpg",
-            caption: "Company Registration Certificate – Sam Technical Service Contracting Est",
-        },
-        {
-            type: "image",
-            src: "/assets/img/testmonials/c2.jpg",
-            thumb: "/assets/img/testmonials/c2.jpg",
-            caption: "Company Registration Certificate – Valve Tech Testing",
-        },
-        {
-            type: "image",
-            src: "/assets/img/testmonials/company-registration-certificate-sam-tech.png",
-            thumb: "/assets/img/testmonials/company-registration-certificate-sam-tech.png",
-            caption: "Company Registration Certificate – Sam Tech",
-        },
-        {
-            type: "image",
-            src: "/assets/img/testmonials/vat-certificate.jpg",
-            thumb: "/assets/img/testmonials/vat-certificate.jpg",
-            caption: "VAT Certificate",
-        },
-    ]
+    // const crCopiesItems = [
+    //     {
+    //         type: "image",
+    //         src: "/assets/img/testmonials/c1.jpg",
+    //         thumb: "/assets/img/testmonials/c1.jpg",
+    //         caption: "Company Registration Certificate – Sam Technical Service Contracting Est",
+    //     },
+    //     {
+    //         type: "image",
+    //         src: "/assets/img/testmonials/c2.jpg",
+    //         thumb: "/assets/img/testmonials/c2.jpg",
+    //         caption: "Company Registration Certificate – Valve Tech Testing",
+    //     },
+    //     {
+    //         type: "image",
+    //         src: "/assets/img/testmonials/company-registration-certificate-sam-tech.png",
+    //         thumb: "/assets/img/testmonials/company-registration-certificate-sam-tech.png",
+    //         caption: "Company Registration Certificate – Sam Tech",
+    //     },
+    //     {
+    //         type: "image",
+    //         src: "/assets/img/testmonials/vat-certificate.jpg",
+    //         thumb: "/assets/img/testmonials/vat-certificate.jpg",
+    //         caption: "VAT Certificate",
+    //     },
+    // ]
 
 
     const isoItems = [
         {
-            type: "image",
-            src: "/assets/img/testmonials/c3.jpg",
-            thumb: "/assets/img/testmonials/c3.jpg",
-            caption: "ISO - Quality Assured",
+            type: "iframe",
+            src: "/assets/img/appreciation/iso-14001-original-certificate-global-powertech.jpg",
+            thumb: "/assets/img/appreciation/iso-14001-original-certificate-global-powertech.jpg",
+            caption: "ISO-14001 Original Certificate - Global Powertech",
         },
         {
-            type: "image",
-            src: "/assets/img/testmonials/c4.jpg",
-            thumb: "/assets/img/testmonials/c4.jpg",
-            caption: "ISO- Occupational Safety",
+            type: "iframe",
+            src: "/assets/img/appreciation/iso-9001-original-certificate-global-powertech.jpg",
+            thumb: "/assets/img/appreciation/iso-9001-original-certificate-global-powertech.jpg",
+            caption: "ISO-9001 Original Certificate - Global Powertech",
         },
         {
-            type: "image",
-            src: "/assets/img/testmonials/c5.jpg",
-            thumb: "/assets/img/testmonials/c5.jpg",
-            caption: "ISO - Green Business",
-        },
-    ]
-
- 
-
-    const appLetterItems = [
-        {
-            type: "image",
-            src: "/assets/img/testmonials/c6.jpg",
-            thumb: "/assets/img/testmonials/c6.jpg",
-            caption: "Business Appreciation Letter- Mitsubishi , Japan",
-        },
-        {
-            type: "image",
-            src: "/assets/img/testmonials/c7.jpg",
-            thumb: "/assets/img/testmonials/c7.jpg",
-            caption: "Electricity Water Authority - Hawar Power And Water Station - Appreciation Letter - PTD",
-        },
-        {
-            type: "image",
-            src: "/assets/img/testmonials/c8.jpg",
-            thumb: "/assets/img/testmonials/c8.jpg",
-            caption: "NOMAC Appreciation Letter- Sam Technical Service Contracting Est",
-        },
-        {
-            type: "image",
-            src: "/assets/img/testmonials/vat4.jpg",
-            thumb: "/assets/img/testmonials/vat4.jpg",
-            caption: "VAT Certificate",
-        },
-
-        {
-            type: "image",
-            src: "/assets/img/testmonials/c55.jpg",
-            thumb: "/assets/img/testmonials/c55.jpg",
-            caption: "GE – Fieldcore – Complyworks Contractor Verification Card with Score of 100",
-        },
-
-        {
-            type: "image",
-            src: "/assets/img/testmonials/5.jpg",
-            thumb: "/assets/img/testmonials/5.jpg",
-            caption: "Thanks and Appreciation - MTM-L-148- GPIC",
-        },
-        {
-            type: "image",
-            src: "/assets/img/testmonials/7.jpg",
-            thumb: "/assets/img/testmonials/7.jpg",
-            caption: "Customer Ratings",
-        },
-
-        {
-            type: "image",
-            src: "/assets/img/testmonials/eco.jpeg",
-            thumb: "/assets/img/testmonials/eco.jpeg",
-            caption: "ECOVADIS SUSTAINABILITY RATING - SILVER MEDA FOR POWER TECH GROUP - TOP 25% of the companies assessed by Ecovadis",
-        },
-
-
-        {
-            type: "image",
-            src: "/assets/img/testmonials/certificate_for_outstanding_worker_one.jpeg",
-            thumb: "/assets/img/testmonials/certificate_for_outstanding_worker_one.jpeg",
-            caption: "Certificate For Outstanding Worker Accommodation Management & Maintenance in 2024 1",
-        },
-
-        {
-            type: "image",
-            src: "/assets/img/testmonials/certificate_for_outstanding_worker_two.jpg",
-            thumb: "/assets/img/testmonials/certificate_for_outstanding_worker_two.jpg",
-            caption: "Certificate For Outstanding Worker Accommodation Management & Maintenance in 2024",
+            type: "iframe",
+            src: "/assets/img/appreciation/iso-45001-original-certificate-global-powertech.jpg",
+            thumb: "/assets/img/appreciation/iso-45001-original-certificate-global-powertech.jpg",
+            caption: "ISO-45001 Original Certificate - Global Powertech",
         },
     ]
 
 
-    const referencePos = [
-        {
-            type: "image",
-            src: "/assets/img/testmonials/engie_fadhili.jpg",
-            thumb: "/assets/img/testmonials/engie_fadhili.jpg",
-            caption: "ENGIE FADHILI O&M COMPANY ONLINE SAFETY VALVE TESTING",
-        },
-        {
-            type: "image",
-            src: "/assets/img/testmonials/nomac_red_sea_long_term_manpower.jpg",
-            thumb: "/assets/img/testmonials/nomac_red_sea_long_term_manpower.jpg",
-            caption: "NOMAC RED SEA LONG TERM MANPOWER",
-        },
 
-    ]
+    // const appLetterItems = [
+    //     {
+    //         type: "image",
+    //         src: "/assets/img/testmonials/c6.jpg",
+    //         thumb: "/assets/img/testmonials/c6.jpg",
+    //         caption: "Business Appreciation Letter- Mitsubishi , Japan",
+    //     },
+    //     {
+    //         type: "image",
+    //         src: "/assets/img/testmonials/c7.jpg",
+    //         thumb: "/assets/img/testmonials/c7.jpg",
+    //         caption: "Electricity Water Authority - Hawar Power And Water Station - Appreciation Letter - PTD",
+    //     },
+    //     {
+    //         type: "image",
+    //         src: "/assets/img/testmonials/c8.jpg",
+    //         thumb: "/assets/img/testmonials/c8.jpg",
+    //         caption: "NOMAC Appreciation Letter- Sam Technical Service Contracting Est",
+    //     },
+    //     {
+    //         type: "image",
+    //         src: "/assets/img/testmonials/vat4.jpg",
+    //         thumb: "/assets/img/testmonials/vat4.jpg",
+    //         caption: "VAT Certificate",
+    //     },
 
-    
-  return (
-    <>
-          <section className='hero-banner'>
-              <div className='container'>
-                  <div className='row alignItem_center' >
-                      <div className='col-lg-6'>
-                          <div className='innerpage_bnrContent'>
-                              <h1>Appreciations</h1>
-                              <p>We are grateful to our clients for giving us the opportunity to work for them; it is a tremendous source of encouragement for our team when our work is recognized. Numerous business leaders from Saudi Arabia and overseas have expressed appreciation for our team thus far.</p>
-                              <Link  href="/contact-us" className='mainbtn'>Contact Us</Link>
-                          </div>
-                      </div>
-                      <div className='col-lg-5 offset-lg-1'>
-                          <div className='hero-banner_img'>
-                              <img className="img-1" src="/assets/img/company-photo/slider1.jpg" alt="about us img" />
-                          </div>
-                      </div>
-                  </div>
-              </div>
-          </section>
+    //     {
+    //         type: "image",
+    //         src: "/assets/img/testmonials/c55.jpg",
+    //         thumb: "/assets/img/testmonials/c55.jpg",
+    //         caption: "GE – Fieldcore – Complyworks Contractor Verification Card with Score of 100",
+    //     },
+
+    //     {
+    //         type: "image",
+    //         src: "/assets/img/testmonials/5.jpg",
+    //         thumb: "/assets/img/testmonials/5.jpg",
+    //         caption: "Thanks and Appreciation - MTM-L-148- GPIC",
+    //     },
+    //     {
+    //         type: "image",
+    //         src: "/assets/img/testmonials/7.jpg",
+    //         thumb: "/assets/img/testmonials/7.jpg",
+    //         caption: "Customer Ratings",
+    //     },
+
+    //     {
+    //         type: "image",
+    //         src: "/assets/img/testmonials/eco.jpeg",
+    //         thumb: "/assets/img/testmonials/eco.jpeg",
+    //         caption: "ECOVADIS SUSTAINABILITY RATING - SILVER MEDA FOR POWER TECH GROUP - TOP 25% of the companies assessed by Ecovadis",
+    //     },
+
+
+    //     {
+    //         type: "image",
+    //         src: "/assets/img/testmonials/certificate_for_outstanding_worker_one.jpeg",
+    //         thumb: "/assets/img/testmonials/certificate_for_outstanding_worker_one.jpeg",
+    //         caption: "Certificate For Outstanding Worker Accommodation Management & Maintenance in 2024 1",
+    //     },
+
+    //     {
+    //         type: "image",
+    //         src: "/assets/img/testmonials/certificate_for_outstanding_worker_two.jpg",
+    //         thumb: "/assets/img/testmonials/certificate_for_outstanding_worker_two.jpg",
+    //         caption: "Certificate For Outstanding Worker Accommodation Management & Maintenance in 2024",
+    //     },
+    // ]
+
+
+    // const referencePos = [
+    //     {
+    //         type: "image",
+    //         src: "/assets/img/testmonials/engie_fadhili.jpg",
+    //         thumb: "/assets/img/testmonials/engie_fadhili.jpg",
+    //         caption: "ENGIE FADHILI O&M COMPANY ONLINE SAFETY VALVE TESTING",
+    //     },
+    //     {
+    //         type: "image",
+    //         src: "/assets/img/testmonials/nomac_red_sea_long_term_manpower.jpg",
+    //         thumb: "/assets/img/testmonials/nomac_red_sea_long_term_manpower.jpg",
+    //         caption: "NOMAC RED SEA LONG TERM MANPOWER",
+    //     },
+
+    // ]
+
+
+    return (
+        <>
+
+            <InnerBanner title="Appreciations" image="/assets/img/company-photo/slider1.jpg"/>
+            {/* <section className='hero-banner'>
+                <div className='container'>
+                    <div className='row alignItem_center' >
+                        <div className='col-lg-6'>
+                            <div className='innerpage_bnrContent'>
+                                <h1>Appreciations</h1>
+                                <p>We are grateful to our clients for giving us the opportunity to work for them; it is a tremendous source of encouragement for our team when our work is recognized. Numerous business leaders from Saudi Arabia and overseas have expressed appreciation for our team thus far.</p>
+                                <Link href="/contact-us" className='mainbtn'>Contact Us</Link>
+                            </div>
+                        </div>
+                        <div className='col-lg-5 offset-lg-1'>
+                            <div className='hero-banner_img'>
+                                <img className="img-1" src="/assets/img/" alt="about us img" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section> */}
 
 
 
-          <section className='ourInfrastructure_sec'>
-              <div className='container textalign_center'>
-                  <Tabs
-                      defaultActiveKey="appreciationLetterTab"
-                      id="uncontrolled-tab-example"
-                      className="stscTab"
-                  >
-                      <Tab eventKey="crCopiesTab" title="CR Copies data">
-                          <div className="crCopiesTab">
+            <section className='ourInfrastructure_sec'>
+                <div className='container textalign_center'>
+                    <Tabs
+                        defaultActiveKey="appreciationLetterTab"
+                        id="uncontrolled-tab-example"
+                        className="stscTab"
+                    >
+                        <Tab eventKey="crCopiesTab" title="CR Copies data">
+                            {/* <div className="crCopiesTab">
                               <LightGallery
                                   onInit={onInit}
                                   speed={500}
@@ -222,37 +225,38 @@ const page = () => {
                                       </a>
                                   ))}
                               </LightGallery>
-                          </div>
+                          </div> */}
 
-                      </Tab>
-                      <Tab eventKey="isoCertificateTab" title="ISO Certificate">
+                        </Tab>
+                        <Tab eventKey="isoCertificateTab" title="ISO Certificate">
 
-                          <div className="isoTab">
-                              <LightGallery
-                                  onInit={onInit}
-                                  speed={500}
-                                  plugins={[lgZoom, lgThumbnail]}
-                              >
-                                  {isoItems.map((isoItem, i) => (
+                            <div className="isoTab">
+                                <LightGallery
+                                    onInit={onInit}
+                                    speed={500}
+                                    plugins={[lgZoom, lgThumbnail]}
+                                >
+                                    {isoItems.map((isoItem, i) => (
 
-                                      <a key={i}
-                                          href={isoItem.src}
-                                          data-sub-html={`<h4>${isoItem.caption}</h4>`}
-                                          data-poster={isoItem.type === "video" ? isoItem.thumb : undefined}
-                                      >
-                                          <img
-                                              src={isoItem.thumb}
-                                              alt={isoItem.caption}
-                                          />
-                                          <h5>{isoItem.caption}</h5>
-                                      </a>
-                                  ))}
-                              </LightGallery>
-                          </div>
-                      </Tab>
-                      <Tab eventKey="appreciationLetterTab" title="Appreciation letter data">
+                                        <a key={i}
+                                            href={isoItem.src}
+                                            data-sub-html={`<h4>${isoItem.caption}</h4>`}
+                                              data-poster={isoItem.type === "video" ? isoItem.thumb : undefined}
+                                            // data-iframe="true"
+                                        >
+                                            <img
+                                                src={isoItem.thumb}
+                                                alt={isoItem.caption}
+                                            />
+                                            <h5>{isoItem.caption}</h5>
+                                        </a>
+                                    ))}
+                                </LightGallery>
+                            </div>
+                        </Tab>
+                        <Tab eventKey="appreciationLetterTab" title="Appreciation letter data">
 
-
+                            {/* 
                           <div className=" appLetterTab">
                               <LightGallery
                                   onInit={onInit}
@@ -274,13 +278,13 @@ const page = () => {
                                       </a>
                                   ))}
                               </LightGallery>
-                          </div>
-                      </Tab>
+                          </div> */}
+                        </Tab>
 
-                      <Tab eventKey="referenceTab" title="Reference and PO's"
-                      >
-                          
-                          <div className="appLetterTab">
+                        <Tab eventKey="referenceTab" title="Reference and PO's"
+                        >
+
+                            {/* <div className="appLetterTab">
                               <LightGallery
                                   onInit={onInit}
                                   speed={500}
@@ -301,14 +305,14 @@ const page = () => {
                                       </a>
                                   ))}
                               </LightGallery>
-                          </div>
-                      </Tab>
+                          </div> */}
+                        </Tab>
 
-                  </Tabs>
-              </div>
-          </section>
-    </>
-  )
+                    </Tabs>
+                </div>
+            </section>
+        </>
+    )
 }
 
 export default page

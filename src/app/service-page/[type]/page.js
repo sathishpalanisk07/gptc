@@ -13,26 +13,11 @@ const ServicePage = () => {
         link.download = "pipeline_intervention_presentation.pptx";
         link.click();
     };
-    
+
     const pathname = usePathname()
     const params = useParams()
     const pagename = params.type;
-    //  const tabs = [
-    // {
-    //   id: "side_tab1", title: "Online Safety Valve Testing (Trevi Type)", content: (
-    //     <>
-    //       <div className='mb_24'>
-    //         <img src="/assets/img/treviType.webp" alt="Online Safety Valve Testing (Trevi Type)" />
-    //       </div>
-    //       <p className='spitsbergenBlueText_clr fontSize16 fontWeight400 mb_16'>THE ONLY THING MORE IMPORTANT THAN A SAFETY VALVE IS HOW YOU TEST IT</p>
-    //       <h5>AccuTEST Safety Valve Test System & L – PLAN LEGA TEST System- Online Safety Valve Testing Test Online</h5>
-    //       <p className='spitsbergenBlueText_clr fontSize16 fontWeight400 mb_16'>Safety valves are essential to the protection of lives and property, so regular testing is crucial to ensure that valves are functioning properly. But can you really be sure of the results if the test is not conducted under the stress of everyday conditions?</p>
-    //       <Link href="/service-page/online_safety_testing">To know more Click Here</Link>
 
-
-    //     </>
-    //   )
-    // },]
     const pageData = {
         online_safety_testing: {
             title: "Online Safety Valve Testing (Trevi Type)",
@@ -153,7 +138,6 @@ const ServicePage = () => {
 
 
         },
-
         alltype_valve_services: {
             title: "All Types of Valve Servicing",
             subTitle: "SERVICES",
@@ -257,34 +241,20 @@ const ServicePage = () => {
 
                             <div className='valvetypesGrid'>
                                 <span>Valve Gland Leak</span>
-
                                 <span>Valve Body Leaks</span>
-
                                 <span>Valve Bonnet Leaks</span>
-
                                 <span>Heat Exchanger Leaks</span>
-
                                 <span>Pressure Vessel Repairs</span>
-
                                 <span>Expansion Joint Repairs</span>
-
                                 <span>Flange Connection Leak Repairs</span>
-
                                 <span>Pipeline Leak Repairs</span>
-
                                 <span>Riser Repairs</span>
-
                                 <span>Valve Gland Leaks</span>
-
                                 <span>Line Crimping</span>
-
                                 <span>Composite Repairs</span>
-
                                 <span>Strong Back Systems</span>
                             </div>
-
                             <h5 className='fontSize16 fontWeight600 blackText_Clr mb_12'>ADVANTAGES</h5>
-
                             <ul className='mb_40'>
                                 <li className='fontSize16 fontWeight400 shearwaterBlackText_clr mb_12'>Save millions in operational down time, your leaks are repaired while your facilities stay on-line</li>
                                 <li className='fontSize16 fontWeight400 shearwaterBlackText_clr mb_12'>Quality approved products</li>
@@ -295,15 +265,11 @@ const ServicePage = () => {
                                 <li className='fontSize16 fontWeight400 shearwaterBlackText_clr mb_12'>Create safer working conditions</li>
                                 <li className='fontSize16 fontWeight400 shearwaterBlackText_clr'>  Prevent spillages and pollution</li>
                             </ul>
-
                         </div>
                     </div>
                 </>
             ),
-
-
         },
-
         hot_tapping: {
             title: "Hot Tapping & Insertion of S-Type (Gate Valve Online)",
             subTitle: "SERVICES",
@@ -312,18 +278,10 @@ const ServicePage = () => {
             content: (
                 <>
                     <h5 className='fontSize18 fontWeight600 blackText_Clr mb_12'>When Hot Tapping Makes the Difference: Minimizing Disruption and Maximizing Efficiency</h5>
-
-
                     <p className='fontSize16 fontWeight400 shearwaterBlackText_clr mb_16'>{`In the world of pipeline management, efficiency and minimal disruption are key. That's where hot tapping comes in, a specialized technique that allows you to connect to existing pipelines without interrupting the flow. This blog post dives into the benefits of hot tapping and the scenarios where it shines.`}</p>
-
                     <p className='fontSize16 fontWeight400 shearwaterBlackText_clr mb_16'><span className='fontWeight600'>Uninterrupted Operations:</span> {`Imagine needing to upgrade your pipeline system. Traditionally, this would mean shutting down the entire operation, resulting in lost production, frustrated customers, and significant financial losses. Enter hot tapping. This innovative method lets you seamlessly add new branches or isolate sections for maintenance all while the pipeline remains active. It's like performing surgery on a running engine – a feat of engineering brilliance.`}</p>
-
                     <p className='fontSize16 fontWeight400 shearwaterBlackText_clr mb_16'><span className='fontWeight600'>Safety and Environmental Benefits:</span> Beyond avoiding costly downtime, hot tapping also prioritizes safety and environmental responsibility. By eliminating the need for depressurization, the risks associated with handling highly pressurized systems are significantly reduced. Additionally, hot tapping minimizes product loss and prevents harmful gas emissions, making it a sustainable choice for your business and the planet.</p>
-
                     <p className='fontSize16 fontWeight400 shearwaterBlackText_clr mb_34'><span className='fontWeight600'>Cost-Effective Efficiency:</span>{`Let's talk numbers. By eliminating the need for lengthy shutdowns and complex rewelding procedures, hot tapping offers tangible cost savings. Less planning, reduced manpower requirements, and faster project completion times all add up to a more efficient and financially advantageous solution.`}</p>
-
-
-
                     <div className='row alignItem_center'>
                         <div className='col-lg-4 mobspaceMb_24'>
                             {[
@@ -362,225 +320,211 @@ const ServicePage = () => {
                 </>
             ),
         },
-        heat_exchanger: {
-            title: "Heat Exchanger, Maintenance & Supply",
+        // heat_exchanger: {
+        //     title: "Heat Exchanger, Maintenance & Supply",
+        //     subTitle: "SERVICES",
+        //     bannerImg: "/assets/img/heatExchanger_bnr.png",
+        //     bannerparagraph: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+        //     content: (
+        //         <>
+        //             <h5 className='fontSize16 fontWeight600 blackText_Clr mb_12'>HEAT EXCHANGER MAINTENANCE</h5>
+        //             <ul className='mb_40'>
+        //                 <li className='fontSize16 fontWeight400 shearwaterBlackText_clr mb_12'>Heat Exchangers are Important Heat transfer Equipment in Power & Process Industry.</li>
+        //                 <li className='fontSize16 fontWeight400 shearwaterBlackText_clr mb_12'>Trouble free Performance of the Heat exchanger is critical for Plant Operations and reliability.</li>
+        //                 <li className='fontSize16 fontWeight400 shearwaterBlackText_clr mb_12'>PTD offers complete end to end services including Retubing and repair of Heat exchanger tubes as per customer needs.</li>
+        //                 <li className='fontSize16 fontWeight400 shearwaterBlackText_clr mb_12'>Scope of service includes complete disassembly, Inspection, Manual Cleaning, Hydro jetting and hydro testing of heat exchanger.</li>
+        //                 <li className='fontSize16 fontWeight400 shearwaterBlackText_clr mb_12'>Rectification of Leaking tubes and final assembly.</li>
+
+        //                 <li className='fontSize16 fontWeight400 shearwaterBlackText_clr'>Testing and Handover to Customer site.</li>
+        //             </ul>
+
+
+        //             <div className='row alignItem_center'>
+        //                 <div className='col-lg-6 mobspaceMb_24'>
+        //                     {[
+        //                         "/assets/img/heatExchanger_detail.png"
+        //                     ].map((img, index) => (
+        //                         <div key={index}>
+        //                             <div className='serviceContentImg'>
+        //                                 <img src={img} alt={`service-img-${index}`} />
+        //                             </div>
+        //                         </div>
+        //                     ))}
+
+
+        //                 </div>
+        //                 <div className='col-lg-6'>
+        //                     <h5 className='fontSize16 fontWeight600 blackText_Clr mb_8'>Tube Extraction</h5>
+        //                     <p className='fontSize16 fontWeight400 shearwaterBlackText_clr mb_16'>Old tubes are removed if found any damages along with the tube ends .Any minor tube sheet cracks are then repaired to the ASME code specifications.</p>
+
+        //                     <h5 className='fontSize16 fontWeight600 blackText_Clr mb_8'>Safely Tube transport</h5>
+
+        //                     <p className='fontSize16 fontWeight400 shearwaterBlackText_clr mb_16'>We followed standard procedure and executed tube transport.</p>
+
+        //                     <h5 className='fontSize16 fontWeight600 blackText_Clr mb_8'>Bundle cleaning</h5>
+        //                     <p className='fontSize16 fontWeight400 shearwaterBlackText_clr mb_12'>Tube bundle cleaning carry sufficient manner and removing</p>
+
+        //                     <ul className='mb_16'>
+        //                         <li className='fontSize16 fontWeight400 shearwaterBlackText_clr'>Heater shell repairing work will carry as per standard procedure (ASME code)</li>
+        //                         <li className='fontSize16 fontWeight400 shearwaterBlackText_clr'>Tube inserts in a proper method.</li>
+        //                     </ul>
+
+
+        //                     <h5 className='fontSize16 fontWeight600 blackText_Clr mb_8'>New tubes (Manufacture to meet or exceed specifications) are installed</h5>
+
+        //                     <ul className='mb_16'>
+        //                         <li className='fontSize16 fontWeight400 shearwaterBlackText_clr'>Baffle plates replaced.</li>
+        //                         <li className='fontSize16 fontWeight400 shearwaterBlackText_clr'>Hydro test of heat exchanger</li>
+        //                     </ul>
+
+        //                     <p className='fontSize16 fontWeight400 shearwaterBlackText_clr'>Also, we are supply Heat exchanger according to ASME sex-8 and specialized in fabrication of heater shell.</p>
+
+        //                              </div>
+        //             </div>
+        //         </>
+        //     ),
+
+        // },
+
+        // content not confirm
+        ro_membrane: {
+            title: "RO Plants Retro Fitting",
+            subTitle: "REPLACEMENT SERVICES",
+            bannerImg: "/assets/img/roplants_retro_detail.png",
+            bannerparagraph: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+
+            content: [
+                "PTD specializes in providing professional RO membrane replacement services",
+                "Maintaining the highest standards of quality and performance.",
+                "With our extensive experience and commitment to excellence, we help our clients achieve optimal operation and longevity of their RO systems."
+            ],
+            imgs: [
+                "/assets/img/roplants_retro_detail.png"
+            ],
+            clients: []
+
+        },
+        ro_plant_epc_contracts: {
+            title: "RO Plant EPC Contracts Upto 2MIGPDA",
             subTitle: "SERVICES",
             bannerImg: "/assets/img/heatExchanger_bnr.png",
             bannerparagraph: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
-            content: (
-                <>
-                    <h5 className='fontSize16 fontWeight600 blackText_Clr mb_12'>HEAT EXCHANGER MAINTENANCE</h5>
-                    <ul className='mb_40'>
-                        <li className='fontSize16 fontWeight400 shearwaterBlackText_clr mb_12'>Heat Exchangers are Important Heat transfer Equipment in Power & Process Industry.</li>
-                        <li className='fontSize16 fontWeight400 shearwaterBlackText_clr mb_12'>Trouble free Performance of the Heat exchanger is critical for Plant Operations and reliability.</li>
-                        <li className='fontSize16 fontWeight400 shearwaterBlackText_clr mb_12'>PTD offers complete end to end services including Retubing and repair of Heat exchanger tubes as per customer needs.</li>
-                        <li className='fontSize16 fontWeight400 shearwaterBlackText_clr mb_12'>Scope of service includes complete disassembly, Inspection, Manual Cleaning, Hydro jetting and hydro testing of heat exchanger.</li>
-                        <li className='fontSize16 fontWeight400 shearwaterBlackText_clr mb_12'>Rectification of Leaking tubes and final assembly.</li>
-
-                        <li className='fontSize16 fontWeight400 shearwaterBlackText_clr'>Testing and Handover to Customer site.</li>
-                    </ul>
-
-
-                    <div className='row alignItem_center'>
-                        <div className='col-lg-6 mobspaceMb_24'>
-                            {[
-                                "/assets/img/heatExchanger_detail.png"
-                            ].map((img, index) => (
-                                <div key={index}>
-                                    <div className='serviceContentImg'>
-                                        <img src={img} alt={`service-img-${index}`} />
-                                    </div>
-                                </div>
-                            ))}
-
-
-                        </div>
-                        <div className='col-lg-6'>
-                            <h5 className='fontSize16 fontWeight600 blackText_Clr mb_8'>Tube Extraction</h5>
-                            <p className='fontSize16 fontWeight400 shearwaterBlackText_clr mb_16'>Old tubes are removed if found any damages along with the tube ends .Any minor tube sheet cracks are then repaired to the ASME code specifications.</p>
-
-                            <h5 className='fontSize16 fontWeight600 blackText_Clr mb_8'>Safely Tube transport</h5>
-
-                            <p className='fontSize16 fontWeight400 shearwaterBlackText_clr mb_16'>We followed standard procedure and executed tube transport.</p>
-
-                            <h5 className='fontSize16 fontWeight600 blackText_Clr mb_8'>Bundle cleaning</h5>
-                            <p className='fontSize16 fontWeight400 shearwaterBlackText_clr mb_12'>Tube bundle cleaning carry sufficient manner and removing</p>
-
-                            <ul className='mb_16'>
-                                <li className='fontSize16 fontWeight400 shearwaterBlackText_clr'>Heater shell repairing work will carry as per standard procedure (ASME code)</li>
-                                <li className='fontSize16 fontWeight400 shearwaterBlackText_clr'>Tube inserts in a proper method.</li>
-                            </ul>
-
-
-                            <h5 className='fontSize16 fontWeight600 blackText_Clr mb_8'>New tubes (Manufacture to meet or exceed specifications) are installed</h5>
-
-                            <ul className='mb_16'>
-                                <li className='fontSize16 fontWeight400 shearwaterBlackText_clr'>Baffle plates replaced.</li>
-                                <li className='fontSize16 fontWeight400 shearwaterBlackText_clr'>Hydro test of heat exchanger</li>
-                            </ul>
-
-                            <p className='fontSize16 fontWeight400 shearwaterBlackText_clr'>Also, we are supply Heat exchanger according to ASME sex-8 and specialized in fabrication of heater shell.</p>
-              
-                                     </div>
-                    </div>
-                </>
-            ),
-
+            content: [
+                "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+                "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+                "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+            ],
+            imgs: [
+                "/assets/img/heatExchanger_detail.png",
+            ],
+            clients: [
+                {
+                    name: "BAHRAIN",
+                    companines: [
+                        "FOULATH HOLDING B.S.C ",
+                        "BAHRAIN STEELS BSCC (E.C)"
+                    ]
+                },
+                {
+                    name: "DUBAI",
+                    companines: [
+                        "SHOMCO"
+                    ]
+                }
+            ]
         },
-
-    // content not confirm
-
-            ro_membrane: {
-                title: "RO Plants Retro Fitting",
-                subTitle: "REPLACEMENT SERVICES",
-                bannerImg: "/assets/img/roplants_retro_detail.png",
-                bannerparagraph: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
-
-                content: [
-                    "PTD specializes in providing professional RO membrane replacement services",
-                    "Maintaining the highest standards of quality and performance.",
-                    "With our extensive experience and commitment to excellence, we help our clients achieve optimal operation and longevity of their RO systems."
-                ],
-                imgs: [
-                    "/assets/img/roplants_retro_detail.png"
-                ],
-                clients: []
-
-            },
-
-
-
-
-
-
-
-            ro_plant_epc_contracts: {
-                title: "RO Plant EPC Contracts Upto 2MIGPDA",
-                subTitle: "SERVICES",
-                bannerImg: "/assets/img/heatExchanger_bnr.png",
-                bannerparagraph: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
-                content: [
-                    "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
-                    "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
-                    "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
-                ],
-                imgs: [
-                    "/assets/img/heatExchanger_detail.png",
-                ],
-                clients: [
-                    {
-                        name: "BAHRAIN",
-                        companines: [
-                            "FOULATH HOLDING B.S.C ",
-                            "BAHRAIN STEELS BSCC (E.C)"
-                        ]
-                    },
-                    {
-                        name: "DUBAI",
-                        companines: [
-                            "SHOMCO"
-                        ]
-                    }
-                ]
-            },
-
-            solar_plant_epc: {
-                title: "Solar Plant EPC upto  5MW & Maintenance",
-                subTitle: "SERVICES",
-                bannerImg: "/assets/img/heatExchanger_bnr.png",
-                bannerparagraph: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
-                content: [
-                    "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
-                    "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
-                    "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
-                ],
-                imgs: [
-                    "/assets/img/heatExchanger_detail.png",
-                ],
-                clients: [
-                    {
-                        name: "BAHRAIN",
-                        companines: [
-                            "FOULATH HOLDING B.S.C ",
-                            "BAHRAIN STEELS BSCC (E.C)"
-                        ]
-                    },
-                    {
-                        name: "DUBAI",
-                        companines: [
-                            "SHOMCO"
-                        ]
-                    }
-                ]
-            },
-
-            upvc_aluminiumdoors_windowsfabrication: {
-                title: "UPVC & Aluminium Doors & Windows Fabrication & Installation",
-                subTitle: "SERVICES",
-                bannerImg: "/assets/img/upvc_bnr.png",
-                bannerparagraph: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
-                content: [
-                    "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
-                    "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
-                    "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
-                ],
-                imgs: [
-                    "/assets/img/upvc_bnr.png",
-                ],
-                clients: [
-                    {
-                        name: "BAHRAIN",
-                        companines: [
-                            "FOULATH HOLDING B.S.C ",
-                            "BAHRAIN STEELS BSCC (E.C)"
-                        ]
-                    },
-                    {
-                        name: "DUBAI",
-                        companines: [
-                            "SHOMCO"
-                        ]
-                    }
-                ]
-            },
-
-            technical_manpower_supply_for_power_plant_refineries_and_water_plant: {
-                title: "Technical Manpower supply for Power plant refineries and Water plant",
-                subTitle: "SERVICES",
-                bannerImg: "/assets/img/upvc_bnr.png",
-                bannerparagraph: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
-                content: [
-                    "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
-                    "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
-                    "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
-                ],
-                imgs: [
-                    "/assets/img/upvc_bnr.png",
-                ],
-                clients: [
-                    {
-                        name: "BAHRAIN",
-                        companines: [
-                            "FOULATH HOLDING B.S.C ",
-                            "BAHRAIN STEELS BSCC (E.C)"
-                        ]
-                    },
-                    {
-                        name: "DUBAI",
-                        companines: [
-                            "SHOMCO"
-                        ]
-                    }
-                ]
-            },
+        solar_plant_epc: {
+            title: "Solar Plant EPC upto  5MW & Maintenance",
+            subTitle: "SERVICES",
+            bannerImg: "/assets/img/heatExchanger_bnr.png",
+            bannerparagraph: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+            content: [
+                "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+                "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+                "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+            ],
+            imgs: [
+                "/assets/img/heatExchanger_detail.png",
+            ],
+            clients: [
+                {
+                    name: "BAHRAIN",
+                    companines: [
+                        "FOULATH HOLDING B.S.C ",
+                        "BAHRAIN STEELS BSCC (E.C)"
+                    ]
+                },
+                {
+                    name: "DUBAI",
+                    companines: [
+                        "SHOMCO"
+                    ]
+                }
+            ]
+        },
+        upvc_aluminiumdoors_windowsfabrication: {
+            title: "UPVC & Aluminium Doors & Windows Fabrication & Installation",
+            subTitle: "SERVICES",
+            bannerImg: "/assets/img/upvc_bnr.png",
+            bannerparagraph: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+            content: [
+                "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+                "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+                "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+            ],
+            imgs: [
+                "/assets/img/upvc_bnr.png",
+            ],
+            clients: [
+                {
+                    name: "BAHRAIN",
+                    companines: [
+                        "FOULATH HOLDING B.S.C ",
+                        "BAHRAIN STEELS BSCC (E.C)"
+                    ]
+                },
+                {
+                    name: "DUBAI",
+                    companines: [
+                        "SHOMCO"
+                    ]
+                }
+            ]
+        },
+        technical_manpower_supply_for_power_plant_refineries_and_water_plant: {
+            title: "Technical Manpower supply for Power plant refineries and Water plant",
+            subTitle: "SERVICES",
+            bannerImg: "/assets/img/upvc_bnr.png",
+            bannerparagraph: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+            content: [
+                "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+                "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+                "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+            ],
+            imgs: [
+                "/assets/img/upvc_bnr.png",
+            ],
+            clients: [
+                {
+                    name: "BAHRAIN",
+                    companines: [
+                        "FOULATH HOLDING B.S.C ",
+                        "BAHRAIN STEELS BSCC (E.C)"
+                    ]
+                },
+                {
+                    name: "DUBAI",
+                    companines: [
+                        "SHOMCO"
+                    ]
+                }
+            ]
+        },
     }
 
     return (
         <>
-
             <Service pageData={pageData[`${pagename}`]} pagename={pagename} />
-
-
             <section className='leadsGeneration_sec' id="to-know-more-contact-us">
                 <div className='container'>
 

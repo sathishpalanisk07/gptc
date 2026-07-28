@@ -5,23 +5,23 @@ const InnerBanner = ({ title, image, breadcrumb = [] }) => {
 
     return (
         <>
-            <section className='hero-banner' style={{
+            <section className='innerpagebnr bannerOverlay' style={{
                 backgroundImage: `url(${image})`
             }}>
                 <div className="container height100per">
-                    <div className='innerpage_bnrContent height100per'>
+                    <div className='displayFlex alignItem_center height100per positionRelative zIndexOne' >
+                    <div className='innerpage_bnrContent'>
                         <div>
                             <ul className='page_breadcrumb'>
                                 <li><Link href={"/"}> Home</Link></li>
-                                <li><img src="/assets/img/rightIcon.svg" alt='right icon' /> </li>
+                                    <li><img className='whiteFilter' src="/assets/img/rightIcon.svg" alt='right icon' /> </li>
                                 <li> About Us</li>
-                                <li><img src="/assets/img/rightIcon.svg" alt='right icon' /> </li>
+                                <li><img className='whiteFilter' src="/assets/img/rightIcon.svg" alt='right icon' /> </li>
                                 <li><Link href={'/company'}>Company</Link></li>
                             </ul>
-                            <h1>{title}   </h1>
-                            {/* <p className='fontSize16 fontWeight400 blackText_Clr mb_24'>{page.subTitle}</p> */}
-                            {/* <button className='mainbtn'>Contact Us</button> */}
+                            <h1>{title}</h1>
                         </div>
+                    </div>
                     </div>
                 </div>
             </section>

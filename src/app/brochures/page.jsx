@@ -1,5 +1,6 @@
 "use client";
 import React from 'react'
+import InnerBanner from '../Components/InnerBanner';
 
 const page = () => {
     const handleDownload = () => {
@@ -10,7 +11,8 @@ const page = () => {
     };
     return (
         <>
-            <section className='hero-banner'>
+            <InnerBanner title="Brochures" image="/assets/img/trainings/recognised_by governer_of_india.jpg"/>
+            {/* <section className='hero-banner'>
                 <div className='container'>
                     <div className='row alignItem_center' >
                         <div className='col-lg-6'>
@@ -27,7 +29,7 @@ const page = () => {
                         </div>
                     </div>
                 </div>
-            </section>
+            </section> */}
 
             <section className='brochure_sec'>
                 <div className="container">

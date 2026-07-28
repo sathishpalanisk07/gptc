@@ -2,94 +2,16 @@
 import Link from 'next/link';
 
 const Footer = () => {
-
-
-  // const items = [
-  //   {
-  //     type: "image",
-  //     src: "/assets/img/gallery_img/01652965804.jpg",
-  //     thumb: "/assets/img/gallery_img/01652965804.jpg",
-  //     // caption: "Sample Photo 1",
-  //   },
-
-  //   {
-  //     type: "image",
-  //     src: "/assets/img/gallery_img/01652965823.jpg",
-  //     thumb: "/assets/img/gallery_img/01652965823.jpg",
-  //     // caption: "Sample Photo 1",
-  //   },
-
-  //   {
-  //     type: "image",
-  //     src: "/assets/img/gallery_img/01652965841.jpg",
-  //     thumb: "/assets/img/gallery_img/01652965841.jpg",
-  //     // caption: "Sample Photo 1",
-  //   },
-
-  //   {
-  //     type: "image",
-  //     src: "/assets/img/gallery_img/01653046118.png",
-  //     thumb: "/assets/img/gallery_img/01653046118.png",
-  //     // caption: "Sample Photo 1",
-  //   },
-
-
-  //   {
-  //     type: "image",
-  //     src: "/assets/img/gallery_img/01653208757.jpeg",
-  //     thumb: "/assets/img/gallery_img/01653208757.jpeg",
-  //     // caption: "Sample Photo 1",
-  //   },
-
-  //   {
-  //     type: "image",
-  //     src: "/assets/img/gallery_img/01653488601.jpeg",
-  //     thumb: "/assets/img/gallery_img/01653488601.jpeg",
-  //     // caption: "Sample Photo 1",
-  //   },
-  // ];
   return (
     <>
 
-      {/* <div className="topFooter">
-        <div className="container"> 
-        <ul>
-            <li>
-             <span>Brochure</span>
-              </li>
-            <li>
-           <img src="/assets/img/pdf-download.svg" alt="pdf download" />
-              <span>Mechanical Maintenance</span>
-              </li>
-            <li>
-             <img src="/assets/img/pdf-download.svg" alt="pdf download" />
-             <span>Electrical Maintenance</span>
-              </li>
-            <li>
-             <img src="/assets/img/pdf-download.svg" alt="pdf download" />
-              <span>Fabrication</span>
-              </li>
-            <li>
-             <img src="/assets/img/pdf-download.svg" alt="pdf download" />
-              <span>Valve Testing</span>
-              </li>
-            <li>
-              <img src="/assets/img/pdf-download.svg" alt="pdf download" />
-              <span>Manpower</span>
-            </li>
-            <li>
-              <img src="/assets/img/pdf-download.svg" alt="pdf download" />
-              <span>Powerplant O & M</span>
-            </li>
-        </ul>
-        </div>
-    </div> */}
+  
       <footer>
         <div className="container">
           <div className='row mb_40'>
             <div className='col-lg-4 mobspaceMb_24'>
               <h2>About Us</h2>
-              <p className='fontSize16 fontWeight400 whiteText_Clr mb_24'>GLOBAL POWER TECH an ISO 9001 and ISO 45001 company is Unique in Indian sub-continent and GCC countries, as ONE-STOP-SHOP for total power plant services in the areas of Repairs & Retrofits, EPC contracts.</p>
+              <p className='fontSize14 fontWeight400 whiteText_Clr'>GLOBAL POWER TECH an ISO 9001 and ISO 45001 company is Unique in Indian sub-continent and GCC countries, as ONE-STOP-SHOP for total power plant services in the areas of Repairs & Retrofits, EPC contracts.</p>
 
 
             </div>
@@ -151,6 +73,13 @@ const Footer = () => {
                   <Link href={'/careers'} prefetch>
                     <img className='whiteFilter' src="/assets/img/stepPoint.svg" alt='step point' />
                     <span>Careers</span>
+
+                  </Link>
+                </li>
+                <li>
+                  <Link href={'/careers'} prefetch>
+                    <img className='whiteFilter' src="/assets/img/stepPoint.svg" alt='step point' />
+                    <span>Blog</span>
 
                   </Link>
                 </li>

@@ -1,10 +1,12 @@
 import Link from 'next/link'
 import React from 'react'
+import InnerBanner from '../Components/InnerBanner'
 
 const page = () => {
     return (
         <>
-            <section className='hero-banner'>
+            <InnerBanner title="Group companies" image="/assets/img/company-photo/sl5.jpg"/>
+            {/* <section className='hero-banner'>
                 <div className="container height100per">
                     <div className='row alignItem_center height100per' >
                         <div className='col-lg-6'>
@@ -17,7 +19,6 @@ const page = () => {
                                     <li><Link href={'/group-companies'}>Group companies</Link></li>
                                 </ul>
                                 <h1>Group companies</h1>
-                                {/* <p className='fontSize16 fontWeight400 blackText_Clr mb_24'>{page.subTitle}</p> */}
                                 <p className='fontSize16 fontWeight400 blackText_Clr mb_24'>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Delectus quod fugiat corrupti, aut accusamus, porro esse, corporis nisi qui excepturi nostrum in? Maxime maiores nostrum eius cumque velit architecto ullam.</p>
                                 <Link href="/contact-us" className='mainbtn'>Contact Us</Link>
                             </div>
@@ -26,13 +27,11 @@ const page = () => {
                             <div className="hero-banner_img" >
                                 <img src="/assets/img/company-photo/sl5.jpg"
                                     alt="company" />
-
-
                             </div>
                         </div>
                     </div>
                 </div>
-            </section>
+            </section> */}
 
             <section className='groupcompanies_sec'>
                 <div className='container'>

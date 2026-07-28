@@ -14,6 +14,7 @@ import 'lightgallery/scss/lg-zoom.scss';
 // import plugins if you need
 import lgThumbnail from 'lightgallery/plugins/thumbnail';
 import lgZoom from 'lightgallery/plugins/zoom';
+import InnerBanner from '../Components/InnerBanner';
 
 
 const GalleryPage = () => {
@@ -603,7 +604,12 @@ const GalleryPage = () => {
 
     return (
         <>
-            <section className='hero-banner'>
+        <InnerBanner title="Photo Gallery" image="/assets/img/gallery_img/01696864443.jpeg" breadcrumb={[
+            { name: "Home", link: "/" },
+            { name: "Our Infrastructure", link: "/our-infrastructure" },
+            { name: "Photo Gallery", link: "/photo-gallery" },
+        ]} />
+            {/* <section className='hero-banner'>
                 <div className='container'>
                     <div className='row alignItem_center' >
                         <div className='col-lg-6'>
@@ -629,7 +635,7 @@ const GalleryPage = () => {
                         </div>
                     </div>
                 </div>
-            </section>
+            </section> */}
 
             <section className='gallerySec'>
                 <div className='container'>

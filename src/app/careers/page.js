@@ -3,10 +3,12 @@ import Link from 'next/link';
 import React from 'react'
 import Tab from 'react-bootstrap/Tab';
 import Tabs from 'react-bootstrap/Tabs';
+import InnerBanner from '../Components/InnerBanner';
 const Page = () => {
   return (
     <>
-          <section className='hero-banner'>
+          <InnerBanner title="Careers" image="/assets/img/valve_service_home.jpeg"/>
+          {/* <section className='hero-banner'>
               <div className='container'>
                   <div className='row alignItem_center' >
                       <div className='col-lg-6'>
@@ -23,7 +25,7 @@ const Page = () => {
                       </div>
                   </div>
               </div>
-          </section>
+          </section> */}
 
    
     </>

@@ -122,7 +122,7 @@ const AboutUs = () => {
                         </div>
                     </div>
                 </div>
-            </section>
+            </section>xsdsdsd
             <section className="about-area">
                 <div className="container">
                     <div className="row g-4 align-items-center">

@@ -16,6 +16,7 @@ import 'lightgallery/scss/lg-zoom.scss';
 // import plugins if you need
 import lgThumbnail from 'lightgallery/plugins/thumbnail';
 import lgZoom from 'lightgallery/plugins/zoom';
+import InnerBanner from '../Components/InnerBanner';
 const page = () => {
     const tabData = [
         {
@@ -106,7 +107,8 @@ const page = () => {
 
     return (
         <>
-            <section className='hero-banner'>
+        <InnerBanner title="Our Branches" image="/assets/img/all_logo.jfif"/>
+            {/* <section className='hero-banner'>
                 <div className='container'>
                     <div className='row alignItem_center' >
                         <div className='col-lg-6'>
@@ -132,7 +134,7 @@ const page = () => {
                         </div>
                     </div>
                 </div>
-            </section>
+            </section> */}
 
 
             <section className='ourBranches_sec'>
